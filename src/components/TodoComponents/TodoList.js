@@ -6,12 +6,12 @@ import TodoForm from "./TodoForm";
 
 const listitems = [
     {
-        task: 'Organize Garage',
+        task: 'Learn setState()',
         id: 1528817077286,
         completed: false
     },
     {
-        task: 'Bake Cookies',
+        task: 'Style my Todo List',
         id: 1528817084358,
         completed: false
     }
