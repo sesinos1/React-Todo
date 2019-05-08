@@ -4,7 +4,7 @@ import React from "react";
 import Todo from "./Todo";
 import TodoForm from "./TodoForm";
 
-const students = [
+const listitems = [
     {
         task: 'Organize Garage',
         id: 1528817077286,
@@ -22,7 +22,7 @@ class TodoList extends React.Component {
         super();
         this.state = {
             todoList: listitems,
-            name: "",
+            task: "",
         };
     }
 
@@ -32,7 +32,7 @@ class TodoList extends React.Component {
             todoList: [
             ...this.state.todoList,
             {
-                name: this.state.name,
+                task: this.state.task,
             }
           ]
         });
@@ -55,7 +55,7 @@ class TodoList extends React.Component {
             <TodoForm
               addListItem={this.addListItem}
               changeHandler={this.changeHandler}
-              name={this.state.name}
+              task={this.state.task}
             />
           </div>
         );
