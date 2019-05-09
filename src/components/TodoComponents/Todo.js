@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import "./Todo.css";
 
-function TodoList(props) {
+const Todo = props => {
   return (
-    <div className="student-card">
-        <h3>{props.todo.task}</h3>
-    </div>
+    <h3
+      className={`${props.todo.completed ? "line" : false}`}
+      onClick={() => props.toggleComplete(props.todo.id)}
+    >
+      {props.todo.task}
+    </h3>
   );
-}
+};
 
-export default TodoList;
+export default Todo;
